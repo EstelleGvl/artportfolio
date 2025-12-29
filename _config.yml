@@ -2,7 +2,7 @@
 title: Sarah's Art Portfolio
 email: ""
 description: "Photo Journal"
-url: "https://estelle.gueville.com"
+url: "https://estellegueville.com"
 baseurl: "/artportfolio"
 facebook_username: ""
 twitter_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "/artportfolio/gallery/"  
-  - JOURNAL: "/artportfolio/journal/"
-  - ABOUT: "/artportfolio/about/"
+  - GALLERY: "https://estellegueville.com/artportfolio/gallery/"  
+  - JOURNAL: "https://estellegueville.com/artportfolio/journal/"
+  - ABOUT: "https://estellegueville.com/artportfolio/about/"
 
 # All translation keys
 translations:
