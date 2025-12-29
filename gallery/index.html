@@ -126,7 +126,7 @@ images:
                          <figure class="effect-selena">
 					<header class='gallery-icon'>
 		       
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{image.gallery-name}}" data-caption="{{image.gallery-date}}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 
 					</header>	
@@ -157,6 +157,8 @@ images:
 <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
 <!-- include mousewheel plugins -->
 <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
 <!-- include carousel plugins -->
 <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
 <!-- include svg line drawing plugin -->
@@ -165,5 +167,23 @@ images:
 <script src="{{ site.baseurl }}/js/scripts.js"></script>
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '<br/>' + item.el.attr('data-caption');
+            }
+        }
+      });
+      });
+</script>
 
 </body></html>
