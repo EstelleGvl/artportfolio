@@ -149,7 +149,6 @@ hr.small {
 .intro-header .page-heading {
   padding: 100px 0 50px;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 @media only screen and (min-width: 768px) {
