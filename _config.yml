@@ -1,7 +1,7 @@
 # Site settings
 title: Sarah's Art Portfolio
 email: ""
-description: "Photo Journal"
+description: "Art Portfolio"
 url: "https://estellegueville.com"
 baseurl: "/artportfolio"
 facebook_username: ""
@@ -18,7 +18,7 @@ owner:
   name:   Sarah Belsky
   avatar: avatar.png
   favicon: favicon.ico
-  info: photography website template
+  info: 
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
